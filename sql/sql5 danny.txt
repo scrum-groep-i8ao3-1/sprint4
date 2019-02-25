@@ -1,0 +1,22 @@
+-- the syntax of a join
+
+SELECT
+
+-- show columns from either the first table ...
+
+doctor.DoctorName,
+
+-- ... or the second
+
+episode.title
+FROM
+
+-- decide which will be the main table
+
+tbldoctor as doctor
+
+-- link to the second table
+
+INNER JOIN tblEpisode as episode
+
+ON doctor.DoctorId = episode.EpisodeId
