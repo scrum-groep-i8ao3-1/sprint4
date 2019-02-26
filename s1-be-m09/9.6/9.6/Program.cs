@@ -9,6 +9,9 @@ namespace _9._6
 {
     class Program
     {
+        //gemaakt door danny
+        //nagekeken door jairo
+        //goed gekeurd
         static void Main(string[] args)
         {
             Boolean jarig = false;
