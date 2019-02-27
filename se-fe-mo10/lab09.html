@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    rol = prompt("wat is je rol");
+    inlogcode = prompt("wat is je inlog code");
+    switch(rol){
+        case 'admin':
+        if(inlogcode == "admin"){
+            alert("welkom admin");
+        }else{
+            ongeldig();
+        }
+        break;
+        case 'student':
+            if(inlogcode == "student"){
+                alert("welkom student");
+            }else{
+                ongeldig();
+            }
+            break;
+        default:
+            ongeldig();
+            break;
+    }
+    function ongeldig(){
+        alert("de rol of code is ongeldig");
+    }
+</script>
+</body>
+</html>

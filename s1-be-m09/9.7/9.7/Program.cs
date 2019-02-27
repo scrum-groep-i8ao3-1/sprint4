@@ -11,8 +11,6 @@ namespace _9._7
     {
         //gemaakt door danny
         //gebruik maximaal 6 personen
-        //goed gekeurd door jairo
-        //werkt goed !
         public static string resultaat = "";
         static void Main(string[] args)
         {
@@ -32,7 +30,6 @@ namespace _9._7
             string path = @"E:\scrum\sprint4\s1-be-m09\9.7\9.7\namen.txt.txt";
             StreamReader sr = new StreamReader(path);
             var lineCount = File.ReadLines(path).Count(); // het nummer hoeveel lines er heeft [ wil je er 1 toevoegen]
-            Console.WriteLine("+--+--+--+--+--+--+--+--+--+--+--+"); //bovenkant van tabel
             for (int i = 0; i < lineCount; i++)
             {
                 resultaat = "";
@@ -43,7 +40,7 @@ namespace _9._7
                 string today = DateTime.Today.ToString("dd/MM/YYYY");
                 string deflayout = "|" + naam + "|";
                 resultaat += deflayout;
-                    for (int a = 0; a < 10; a++)
+                    for (int a = 0; a < 9; a++)
                     {
                     string[] splitatie = datum.Split('-'); // maakt bvb 24-02-2002 naar 24 02 2002
                     string dag = splitatie[0]; //dag //werkt 100 %
@@ -57,7 +54,6 @@ namespace _9._7
                     deflayout += resultaat;
                     }
                 Console.WriteLine(resultaat);
-                Console.WriteLine("+--+--+--+--+--+--+--+--+--+--+--+");
             }
             Console.ReadKey();
         }
