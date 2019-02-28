@@ -1,3 +1,4 @@
+
 function converteer() {
     bedrag = (document.getElementById("bedrag").value);
     e = document.getElementById("lijst");
