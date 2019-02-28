@@ -6,13 +6,45 @@
 </head>
 <body>
 <h1>lab 08</h1>
-<div id ="date"></div>
 <script>
-    var d = new date();
-    var dagnummer = d.getDay();
-    var jaar = d.getFullYear();
-    var
-    document.getElementById("date").innerHTML = date;
+    //gemaakt door danny
+    //gpoed gekeurd door timur kokos
+    //deel 1 werkt
+    var d = new Date();
+    var vandaagdatum = d.getDate();
+    var vandaagmaand = d.getMonth();
+    var vandaagvandaag = d.getDay();
+    var vandaagjaar = d.getFullYear();
+    var dagnamen = ["zo","ma","di","wo","do","vri","za"];
+    const maandnamen = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
+    document.write("vandaag is : "+dagnamen[vandaagvandaag]+" "+maandnamen[vandaagmaand]+" "+vandaagdatum +" " + vandaagjaar +"<br>");
+    //deel 1 werkt vandaag datum :
+    //deel 2 werkt
+    var factuurdatum = new Date("2019-03-5");
+    var factuurmaand = factuurdatum.getMonth();
+    var factuurvandaag = factuurdatum.getDay();
+    var factuurjaar = factuurdatum.getFullYear();
+    var factuurdate = factuurdatum.getDate();
+    document.write("factuurdatum is : "+dagnamen[factuurvandaag]+" "+maandnamen[factuurmaand]+" "+factuurdate +" " + factuurjaar + "<br>");
+    //deel 2 werkts
+    //deel 3 betaal datum
+    var betaaldatum = new Date("2019-3-10");
+    var betaalmaand = betaaldatum.getMonth();
+    var betaalvandaag = factuurdatum.getDay();
+    var betaaljaar =  betaaldatum.getFullYear();
+    var betaaldate = betaaldatum.getDate();
+    document.write("betaaldatum is : "+dagnamen[betaalvandaag]+" "+maandnamen[betaalmaand]+" "+betaaldate +" " + betaaljaar + "<br>");
+    //deel 3 betaal datum
+    //deel 4
+     var vandaagscore = (vandaagmaand * 30)+( vandaagjaar * 356)+( vandaagvandaag);
+    var betaalscore = (betaalmaand * 30)+(betaaljaar * 356)+( betaalvandaag) + 30;
+    if( vandaagscore > betaalscore){
+        alert("meld incassobureau");
+    }else{
+        var verschil = betaalscore - vandaagscore - 18;
+        document.write(" u hebt nog "+ verschil +" dagen om te betalen" );
+    }
+    //deel 4
 </script>
 </body>
 </html>
