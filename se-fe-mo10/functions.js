@@ -1,9 +1,4 @@
-<<<<<<< HEAD
-
-function converteer() {
-=======
 function converteer(bedrag , conversie) {
->>>>>>> ba7878521b6d266930e5a3bbdfb6d4f8c38bacd2
     bedrag = (document.getElementById("bedrag").value);
     e = document.getElementById("lijst");
     optie = (e.options[e.selectedIndex].value) * 1;
