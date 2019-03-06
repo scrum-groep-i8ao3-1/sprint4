@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab04</title>
+</head>
+<body>
+<script>
+    //Maak de array
+    var palet = [];
+    palet = ['Blauw','Rood','Geel','Groen','Paars'];
+    document.write('<br>Palet: ' + palet);
+
+    //Laat de gebruiker een kleur invoegen
+    var nieuwekleur = prompt('Typ een nieuwe kleur in: ');
+
+    //voegt kleur toe aan het begin van de array
+    palet.unshift(nieuwekleur);
+    document.write('<br>Palet: ' + palet);
+
+    //sorteert de array op alfabetische volgorde
+    palet.sort();
+    document.write("<br>Palet op alfabetische volgorde: " +palet);
+
+    //Split de array tussen de eerste 3 elementen en de laatste drie
+    palet2 = palet.splice(3,3);
+    document.write("<br>Array Palet: " + palet , "<br>Array Palet2: " +palet2);
+
+    //Kopiërd de array
+    palet3 = palet.slice();
+    document.write("<br>Palet gekopiërd: " +palet3);
+</script>
+</body>
+</html>
