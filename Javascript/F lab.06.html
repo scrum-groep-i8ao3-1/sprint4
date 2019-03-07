@@ -18,15 +18,17 @@
     var bedrag = aantal * prijs;
     var btw = bedrag / 100 * 6;
     var totaal = bedrag + btw;
+
     document.write("<br> Factuurdatum: " + datum);
     document.write("<br> Betaaldatum: " + bdatum);
     document.write("<br> Bedankt voor je bestelling: " + klantnaam);
     document.write("<br> Boektitel is: " + titel);
     document.write("<br> Aantal te bestellen: " + aantal);
     document.write("<br> Prijs per boek is: " + prijs.toFixed(2));
-    document.write("<br> Bedrag is: " + bedrag);
+    document.write("<br> Bedrag is: " + bedrag.toFixed(2));
     document.write("<br> BTW is: " + btw);
     document.write("<br> Totaal inclusief btw is: " + totaal);
+
 </script>
 </body>
 </html>
