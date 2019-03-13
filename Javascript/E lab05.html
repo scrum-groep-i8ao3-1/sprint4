@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab05</title>
+</head>
+<body>
+<script>
+    //Laat de gebruiker een einddatum invoeren
+    einddatum = prompt('Wat is de einddatum (JJJJ-MM-DD)?');
+    var deadline = new Date(einddatum);
+    document.write('<br>De deadline is: ' +deadline);
+
+    //Bepaald welke dag het vandaag is
+    var nu = Date.now();
+    //De milliseconden van een dag
+    var dag = 86400000;
+
+    //berekent De hoeveelheid dagen tussen de deadline
+    var dagenresterend = ((deadline - nu) / dag);
+
+    //Laat de uitkomst zien
+    document.write('<br>Deadline: ' + deadline , 'Er zijn nog ' + dagenresterend.toFixed(0) , ' dagen te gaan.')
+</script>
+</body>
+</html>

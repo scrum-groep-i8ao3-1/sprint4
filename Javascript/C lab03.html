@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>lab03</title>
+</head>
+<body>
+<script>
+    //Test array maken
+    var testarray = new Array();
+
+    //Voeg de waarde toe
+    testarray[0] = "een";
+    testarray[1] = "twee";
+    testarray[2] = "3";
+    testarray[3] = "vier";
+
+    //Voegt de 5de waarde toe
+    testarray.push(5);
+
+    //Toon test array
+    document.write("<br>Resultaat van testarray: " +testarray);
+
+    //data type van element 5
+    document.write("<br>Het datatype van element van element4: " + typeof testarray[4]);
+
+    //Vewijder het 5de element
+    testarray.pop();
+    document.write("<br>Resultaat van pop: " + testarray);
+
+    //Voeg een element toe aan het begin van de array
+    testarray.unshift("nul");
+    document.write("<br>Resultaat van unshift: " + testarray);
+
+    //delete waarde 1
+    testarray.shift();
+    document.write("<br>Resultaat van shift: " + testarray);
+
+    //toon het datatype van element 0
+    document.write("<br>Het data type van element0 is: " + typeof testarray["nul"]);
+
+    //vewijder tweede element
+    testarray.splice(1,1);
+    document.write("<br>Vewijder het tweede element: " + testarray);
+
+    //vewijder indes2
+    testarray.splice(2,1);
+    document.write("<br>Vewijder index 2: " + testarray);
+
+</script>
+</body>
+</html>
