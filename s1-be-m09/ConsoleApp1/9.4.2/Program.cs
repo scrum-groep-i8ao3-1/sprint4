@@ -10,9 +10,9 @@ public class Example
     public static int maximumgetal = 0;
     public static void Main()
     {
-        Console.WriteLine("vul in welk karakter u wult gebruiken: ");
+        Console.WriteLine("vul in welk karakter u wilt gebruiken: ");
         userK = Convert.ToString(Console.ReadLine());
-        Console.WriteLine("hoeveel van deze karakters wild u hebben: ");
+        Console.WriteLine("hoeveel van deze karakters wilt u hebben: ");
         maximumgetal = Convert.ToInt32(Console.ReadLine());
         maximumgetal -= 1;
         SetTimer();

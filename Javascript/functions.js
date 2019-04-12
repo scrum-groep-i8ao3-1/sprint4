@@ -1,6 +1,6 @@
 function converteer(bedrag , conversie) {
     bedrag = (document.getElementById("bedrag").value);
-    e = document.getElementById("lijst");
+    e = document.getElementById("opties");
     optie = (e.options[e.selectedIndex].value) * 1;
     krijg = 0;
     switch(optie){
