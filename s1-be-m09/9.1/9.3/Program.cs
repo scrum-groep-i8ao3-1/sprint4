@@ -28,15 +28,15 @@ namespace _9._3opdacht
 
         private static void OnTimedEvent(Object source, ElapsedEventArgs e)
         {
-            int nummer1 = rnd.Next(1,100); //yy
-            int nummer2 = rnd.Next(1,100); //xx
-            int nummer3 = rnd.Next(1,4);
+            int nummer1 = rnd.Next(1, 100); //yy
+            int nummer2 = rnd.Next(1, 100); //xx
+            int nummer3 = rnd.Next(1, 4);
 
             switch (nummer3)
             {
                 case 1:
                     //kleur = "blauw";
-                    display(nummer1, nummer2, " ",1);
+                    display(nummer1, nummer2, " ", 1);
                     break;
                 case 2:
                     //kleur = "Rood";
