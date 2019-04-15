@@ -20,6 +20,7 @@ namespace Writing_to_a_Text_File
                 names[i] = Console.ReadLine();
             }
 
+            //schrijft naar het mapje toe
             StreamWriter SW = new StreamWriter(@"C:\Users\mylok\source\repos\4\4\bin\Debug\hallo");
 
             for (int i = 0; i < 1; i++)
@@ -37,6 +38,7 @@ namespace Writing_to_a_Text_File
         {
             string[] names2 = new string[1];
 
+            //leest wat er in het mapje staat
             StreamReader SR = new StreamReader(@"C:\Users\mylok\source\repos\4\4\bin\Debug\hallo");
 
 
@@ -60,6 +62,7 @@ namespace Writing_to_a_Text_File
             {
                 if (names[1] = DateTime.Today.ToString())
                 {
+                    //speelt geluid af
                     System.Media.SoundPlayer player = new System.Media.SoundPlayer("C:/Users/mylok/OneDrive/Documents/wolf.wav");
                     player.Play();
                     Console.WriteLine("Wolf");
