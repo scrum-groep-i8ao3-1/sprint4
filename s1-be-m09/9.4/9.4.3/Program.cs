@@ -40,7 +40,8 @@ public class Example
         Console.Clear();
         if (maximumteller <= maximumgetal)
         {
-            procent += ((maximumteller / maximumgetal) * 100);
+            procent += ((maximumteller / maximumgetal) * 100); ;
+            teller += userK;
             Console.WriteLine("Karakter: " + userK);
             Console.WriteLine("Hoeveelheid Karakters: "+ (maximumgetal + 1));
             Console.Write(procent + "% ");

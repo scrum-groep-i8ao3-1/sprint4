@@ -17,11 +17,11 @@ namespace ConsoleApp1
             string keuze = Convert.ToString(Console.ReadLine());
             keuze.ToLower();
             Console.Clear();
-            if (keuze == "Nederlands")
+            if (keuze == "nederlands")
             {
                 NLstop();
             }
-            if (keuze == "Duits")
+            if (keuze == "duits")
             {
                 DEstop();
             }

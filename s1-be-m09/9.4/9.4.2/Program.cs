@@ -7,7 +7,6 @@ public class Example
     private static System.Timers.Timer aTimer;
     public static string teller = string.Empty;
     public static string userK = "";
-    public static double procent = 0;
     public static int maximumgetal = 0;
     public static void Main()
     {
@@ -25,7 +24,6 @@ public class Example
 
     private static void SetTimer()
     {
-        
         // Create a timer with a two second interval.
         aTimer = new System.Timers.Timer(500);
         // Hook up the Elapsed event for the timer. 
@@ -36,15 +34,13 @@ public class Example
 
     private static void OnTimedEvent(Object source, ElapsedEventArgs e)
     {
-        
         Console.Clear();
         if (maximumteller <= maximumgetal)
         {
-            procent += ((maximumteller / maximumgetal) * 100);
+            teller += userK;
             Console.WriteLine("Karakter: " + userK);
-            Console.WriteLine("Hoeveelheid Karakters: "+ (maximumgetal + 1));
-            Console.Write(procent + "% ");
-            Console.WriteLine(Convert.ToString(teller));
+            Console.WriteLine("Hoeveelheid Karakters: " + (maximumgetal + 1));
+            Console.WriteLine(teller);
             maximumteller += 1;
         }
         else
